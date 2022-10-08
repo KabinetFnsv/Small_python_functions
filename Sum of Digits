@@ -1,0 +1,6 @@
+def digital_root(n):
+   a = sum(int(i) for i in (list(str(n))))
+   while a >= 10:
+       a = sum(int(j) for j in (list(str(a))))
+   else:
+       return a
