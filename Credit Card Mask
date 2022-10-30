@@ -1,0 +1,6 @@
+def maskify(cc):
+        if len(str(cc)) > 4:
+                rslt = "#" * len(str(cc)[:-4]) + str(cc)[-4:-1] + str(cc)[-1]
+        else:
+                rslt = str(cc)
+        return rslt
