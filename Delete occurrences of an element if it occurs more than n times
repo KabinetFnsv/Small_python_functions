@@ -1,0 +1,6 @@
+def delete_nth(order,max_e):
+    order = order[::-1]
+    for i in order:
+        while order.count(i) > max_e:
+            order.remove(i)
+    return order[::-1]
