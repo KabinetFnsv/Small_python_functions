@@ -1,0 +1,6 @@
+def narcissistic(value):
+    fiktlist = []
+    for i in str(value):
+        i = int(i)**len(str(value))
+        fiktlist.append(i)
+    return value == sum(fiktlist)
